@@ -1,3 +1,50 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
 body {
+    background-color: rgb(179, 41, 41);
+}
+
+/* Games and Question area styling */
+
+.quiz-area {
     background-color: blue;
+    box-sizing: border-box;
+    width: 85%;
+    height: 80vh;
+    max-height: 500px;
+    max-width: 830px;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.questions-area {
+    background: blue;
+    width: 70%;
+    height: 7vh;
+    font-size: 2rem;
+    margin: auto;
+    padding: 50px 0;
+}
+
+/* start button styling */
+
+.start-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start-btn button {
+    height: 12vh;
+    width: 15vw;
+    font-size: 3em;
+    background: black;
+    color: pink;
+    font-family: "Londrina Outline", sans-serif;
+    border-radius: 5px;
 }
