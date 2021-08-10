@@ -10,21 +10,35 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="quiz-area">
-        <div class="start-btn">
-            <button>Start Quiz!</button>
+    <h1>General Knowledge Quiz</h1>
+    <div class="start-btn btn">
+        <button>Start Quiz!</button>
+    </div>
+    <div class="quiz-area hide">
+        <div class="next-btn btn hide">
+            <button>Next</button>
         </div>
-        <div class="questions-area">
-
-        </div>
-        <div class="ans-area">
-
+        <div class="question">Question</div>
+        <div class="answer-buttons btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
         </div>
     </div>
-    <div class="score-area">
 
+    <!-- result box -->
+    <div class="result-box">
+        <div class="end-text">
+            Congratulations on completing the quiz!
+        </div>
+        <div class="end-score">
+            <span>Your score was:<p>0</p>out of <p>10</p></span>
+        </div>
+        <div class="replay-btn">
+            <button>Replay Quiz</button>
+        </div>
     </div>
-
     
     <script src="assets/js/script.js"></script>
 </body>

@@ -2,7 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
 body {
+    padding: 0;
+    margin: 0;
     background-color: rgb(179, 41, 41);
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    font-family: "Londrina Outline", sans-serif;
+    text-decoration: underline;
+    color: yellow;
 }
 
 /* Games and Question area styling */
@@ -14,37 +24,73 @@ body {
     height: 80vh;
     max-height: 500px;
     max-width: 830px;
-    margin-top: 8%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1%;
+    box-shadow: 0 0 10px 2px;
+}
+
+
+.quiz-area .questions {
+    margin-top: 10%;
+    font-size: 2em;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
-.questions-area {
-    background: blue;
-    width: 70%;
-    height: 7vh;
-    font-size: 2rem;
-    margin: auto;
-    padding: 50px 0;
+.quiz-area .btn-grid {
+    display: grid;
+    padding: 5%;
+    font-size: 2em;
+    margin-top: 2%;
+    gap: 10%;;
 }
 
+.answer-buttons .btn {
+    font-size: 1em;
+}
+
+.answer-buttons .btn:hover {
+    background: yellow;
+}
+
+.hide {
+    display: none;
+}
 /* start button styling */
 
 .start-btn {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%, -50%);
+
 }
 
 .start-btn button {
-    height: 12vh;
+    height: 10vh;
     width: 15vw;
     font-size: 3em;
     background: black;
     color: pink;
     font-family: "Londrina Outline", sans-serif;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-btn button:hover {
+    background: green;
+}
+
+/* End results box stlying */
+
+.result-box {
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 5%;
+    background: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
 }
