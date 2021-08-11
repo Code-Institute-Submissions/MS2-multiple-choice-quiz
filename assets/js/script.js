@@ -1,4 +1,4 @@
-// grab button element
+// grab elements
 let button = document.querySelector('.start-btn');
 let quizArea = document.querySelector('.quiz-area');
 let shuffledQuestions, currentQuestionIndex;
@@ -20,16 +20,16 @@ function setNextQuestion() {
   }
   
   function showQuestion(question) {
-    questionElement.innerText = question.question;
+    questionElement.innerText = question.question
     question.answers.forEach(answer => {
-      let button = document.createElement('button');
-      button.innerText = answer.text;
-      button.classList.add('btn');
+      const button = document.createElement('button')
+      button.innerText = answer.text
+      button.classList.add('btn')
       if (answer.correct) {
-        button.dataset.correct = answer.correct;
+        button.dataset.correct = answer.correct
       }
-      button.addEventListener('click', selectAnswer);
-      answerButtonsElement.appendChild(button);
+      button.addEventListener('click', selectAnswer)
+      answerButtonsElement.appendChild(button)
     })
   }
 
